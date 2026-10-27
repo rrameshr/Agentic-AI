@@ -1,0 +1,18 @@
+from langchain_groq import ChatGroq
+from langchain_core.messages import SystemMessage, HumanMessage
+from dotenv import load_dotenv
+
+load_dotenv()
+
+chat_model = ChatGroq(model="openai/gpt-oss-20b",temperature=1.5, max_completion_tokens=1000)
+
+
+# messages = [
+#     SystemMessage(content="You are a helpful assistant."),
+#     HumanMessage(content="What is the capital of India?")
+# ]
+
+response = chat_model.invoke("write 5 line poem about cricket ")
+
+
+print(response.content)

@@ -1,0 +1,16 @@
+{
+    "name": null,
+    "input_variables": [
+        "topic",
+        "years"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": " {topic} in simple words with an example, as I am {years} years old.",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+}
